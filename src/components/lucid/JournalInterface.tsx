@@ -109,7 +109,7 @@ export function JournalInterface() {
             {/* Detail */}
             <div className="min-w-0 rounded-2xl border border-border/60 bg-secondary/25 p-5 sm:p-6">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <p className="eyebrow">Last night’s dream</p>
+                <p className="eyebrow">{active.id === entries[0]!.id ? "Last night’s dream" : "Earlier entry"}</p>
                 <span className="flex items-center gap-1.5 text-[0.7rem] text-muted-foreground">
                   <BookOpen className="h-3 w-3" aria-hidden="true" /> Dream #{active.id}
                 </span>
