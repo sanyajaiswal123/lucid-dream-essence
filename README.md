@@ -855,17 +855,8 @@ Prioritize taste, originality, visual storytelling, typography, spacing and rest
 
 Build the first version completely, then test it at 390px and 1440px, fix all layout issues, and polish the visual details before considering the task finished.
 
-This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://lucid-dream-essence.lovable.app
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/36323745-9464-49ec-a2ff-41519afedd31).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 

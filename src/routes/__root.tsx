@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +36,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -77,16 +73,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lucid — A private dream journal & pattern tracker" },
+      { title: "Lucid — Remember What Your Mind Creates" },
       {
         name: "description",
         content:
-          "Capture your dreams the moment you wake, then discover the recurring themes and emotions your mind returns to at night.",
+          "Capture your dreams the moment you wake, discover recurring patterns, and understand the stories your mind creates at night.",
       },
-      { property: "og:title", content: "Lucid — A private dream journal" },
+      { property: "og:title", content: "Lucid — Remember What Your Mind Creates" },
       {
         property: "og:description",
-        content: "Remember what your mind creates while you sleep.",
+        content:
+          "Capture your dreams the moment you wake, discover recurring patterns, and understand the stories your mind creates at night.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

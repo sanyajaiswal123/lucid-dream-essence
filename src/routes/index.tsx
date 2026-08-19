@@ -9,9 +9,9 @@ import { InsightSection } from "@/components/lucid/InsightSection";
 import { FinalCTA } from "@/components/lucid/FinalCTA";
 import { Footer } from "@/components/lucid/Footer";
 
-const title = "Lucid — A private dream journal & pattern tracker";
+const title = "Lucid — Remember What Your Mind Creates";
 const description =
-  "Capture your dreams the moment you wake, then discover the recurring themes, places and emotions your mind returns to at night.";
+  "Capture your dreams the moment you wake, discover recurring patterns, and understand the stories your mind creates at night.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
